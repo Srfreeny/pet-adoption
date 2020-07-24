@@ -211,9 +211,9 @@ const pets = [
     }
   ];
 
-const printToDom =(divId, textToPrint) => {
+const printToDom =(divID, textToPrint) => {
     const selectedDiv = document.getElementById(divID);
-    selectedDiv.innerHTML = textToPring;
+    selectedDiv.innerHTML = textToPrint;
 }
 
 const buildPetCards = () => {
@@ -223,8 +223,8 @@ const buildPetCards = () => {
         domString += `<h2>${pets[i].name}</h2>`
         domString += `<img src=${pets[i].imageUrl} alt="pet-image"/>`
         domString += `<p>${pets[i].color}</p>`
-        domString += `<p>${pets[i].specialSkill}</p>`
-        domString += `<footer>${pets[i].typer}</footer>`
+        domString += `<p class="special-skill">${pets[i].specialSkill}</p>`
+        domString += `<footer>${pets[i].type}</footer>`
         domString += `</div>`
     }
     printToDom('pets', domString);
