@@ -231,3 +231,25 @@ const buildPetCards = () => {
 }
 
 buildPetCards();
+
+let catsBtn = document.getElementById("catz")
+let dogsBtn = document.getElementById("dogz")
+let dinosBtn = document.getElementById("dinoz")
+
+catz.addEventListener('click', buttonClicked);
+function buttonClicked(ev) {
+    console.log(ev.type, ev.target, ev.currentTarget)
+
+};
+
+dogz.addEventListener('click', buttonClicked);
+function buttonClicked(ev) {
+    console.log(ev.type, ev.target, ev.currentTarget)
+
+};
+
+dinoz.addEventListener('click', buttonClicked);
+function buttonClicked(ev) {
+    console.log(ev.type, ev.target, ev.currentTarget)
+
+};
