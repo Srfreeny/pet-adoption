@@ -220,17 +220,17 @@ const pets = [
       selectedPets.push(pets[i]);
     }
   }
-  const bodySelector = document.querySelector('body');
+  // const bodySelector = document.querySelector('body');
 
-  if (buttonId === 'cat') {
-      bodySelector.style.backgroundColor = 'red';
-  } else if (buttonId === 'dog') {
-      bodySelector.style.backgroundColor = 'blue';
-  } else if (buttonId === 'dino') {
-      bodySelector.style.backgroundColor = 'yellow';
-  } else {
-      bodySelector.style.backgroundColor = 'black';
-  }
+  // if (buttonId === 'cat') {
+  //     bodySelector.style.backgroundColor = 'red';
+  // } else if (buttonId === 'dog') {
+  //     bodySelector.style.backgroundColor = 'blue';
+  // } else if (buttonId === 'dino') {
+  //     bodySelector.style.backgroundColor = 'yellow';
+  // } else {
+  //     bodySelector.style.backgroundColor = 'black';
+  // }
   if (buttonId === 'All' || buttonId === e.currentTarget.id){
     buildPetCards(pets);
   } else {
